@@ -1,0 +1,62 @@
+ 1001  cd A2
+ 1002  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_original_nolf2.tsv > downloaded_tweets_extend_original_nolf2_nobot.tsv
+ 1003  awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nolf2.tsv > downloaded_tweets_extend_nolf2_nobot.tsv
+ 1004  cut –f 2 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq –c | sort -nr > top_users.txt
+ 1005  head top_users.txt
+ 1006  cut -f 2 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq -c | sort -nr > top_users.txt
+ 1007  head top_users.txt
+ 1008  cut -f 6 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq -c | sort -nr > top_users_2.txt
+ 1009  head top_users_2.txt 
+ 1010  grep  -P ‘type=retweet’ downloaded_tweets_extend_nolf2_nobot.tsv > q3.txt
+ 1011  cut –f  2 q3.txt | sort | uniq –c | sort –nr > top_user_retweets.txt
+ 1012  cut -f 2 q3.txt | sort | uniq -c | sort -nr > top_user_retweets.txt
+ 1013  head top_user_retweets.txt 
+ 1014  grep retweet downloaded_tweets_extend_nolf2_nobot.tsv > q3.txt
+ 1015  head q3.txt
+ 1016  cut -f 2 q3.txt | sort | uniq -c | sort -nr > top_user_retweets.txt
+ 1017  head top_user_retweets.txt
+ 1018  cut -f 4 downloaded_tweets_extend_nolf2_nobot.tsv > q5_0.txt
+ 1019  iconv -f utf-8 -t ascii//TRANSLIT q5_0.txt > q5_a.txt
+ 1020  cat q5_a.txt | tr ',' '\n' > q5_b.txt
+ 1021  sed 's/\"//g' q5_b.txt > q5_c.txt
+ 1022  cat q5_c.txt|tr '[A-Z]' '[a-z]' > q5_d.txt
+ 1023  cat q5_d.txt | sed '/^$d' > q5_e.txt
+ 1024  cat q5_d.txt | sed '/^$/d' > q5_e.txt
+ 1025  sort q5_e.txt | uniq -c | sort -nr > q5.txt
+ 1026  cat q5.txt | more
+ 1027  rm q5_a.txt q5_b.txt q5_c.txt q5_d.txt q5_e.txt q5_0.txt
+ 1028  grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv | cut –f 4 > q6_0.txt
+ 1029  grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv > q6_0.txt
+ 1030  cut –f 4 q6_0.txt > q6_1.txt
+ 1031  grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv  > q6_0.tsv
+ 1032  cut -f 4 q6_0.tsv > q6_1.txt
+ 1033  iconv -f utf-8 -t ascii//TRANSLIT q6_1.txt > q6_a.txt
+ 1034  cat q6_a.txt | tr ',' '\n' > q6_b.txt
+ 1035  sed 's/\"//g' q6_b.txt > q6_c.txt
+ 1036  cat q6_c.txt|tr '[A-Z]' '[a-z]' > q6_d.txt
+ 1037  cat q6_d.txt | sed '/^$/d' > q6_e.txt
+ 1038  sort q6_e.txt | uniq -c | sort -nr > top_retweets.txt
+ 1039  cat top_retweets.txt | more
+ 1040  rm q6_a.txt q6_b.txt q6_c.txt q6_d.txt q6_e.txt q6_0.txt
+ 1041  grep -P 'replied_to' downloaded_tweets_extend_nolf2_nobot.tsv > q7_0.tsv
+ 1042  cut -f 4 q7_0.tsv > q7_1.txt
+ 1043  iconv -f utf-8 -t ascii//TRANSLIT q7_1.txt > q7_a.txt
+ 1044  cat q7_a.txt | tr ',' '\n' > q7_b.txt
+ 1045  sed 's/\"//g' q7_b.txt > q7_c.txt
+ 1046  cat q7_c.txt | tr '[A-Z]' '[a-z]' > q7_d.txt
+ 1047  cat q7_d.txt | sed '/^$/d' > q7_e.txt
+ 1048  sort q7_e.txt | uniq -c | sort -nr > top_replies.txt
+ 1049  cat top_replies.txt | more
+ 1050  rm q7_a.txt q7_b.txt q7_c.txt q7_d.txt q7_e.txt q7_0.txt
+ 1051  rm q7_0.tsv
+ 1052  grep -P 'type=quoted' downloaded_tweets_extend_nolf2_nobot.tsv > q8_0.tsv
+ 1053  cut -f 4 q8_0.tsv > q8_1.txt
+ 1054  iconv -f utf-8 -t ascii//TRANSLIT q8_1.txt > q8_a.txt
+ 1055  cat q8_a.txt | tr ',' '\n' > q8_b.txt
+ 1056  sed 's/\"//g' q8_b.txt > q8_c.txt
+ 1057  cat q8_c.txt | tr '[A-Z]' '[a-z]' > q8_d.txt
+ 1058  cat q8_d.txt | sed '/^$/d' q8_e.txt
+ 1059  cat q8_d.txt | sed '/^$/d'> q8_e.txt
+ 1060  sort q8_e.txt | uniq -c | sort -nr > top_quoted.txt
+ 1061  cat top_quoted.txt | more
+ 1062  history > cmds.log

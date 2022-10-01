@@ -1,0 +1,485 @@
+##############################################################################
+This file was generated using the command script a2.txt. It has been edited 
+to answer the questions. Answers are at the top, and the actual screen 
+capture is at the bottom of the file.
+
+Q0) Describe in a few sentences how you would remove the newlines from the 
+text field (the professor already did this for you).
+    MS Excel does not get confused by new lines in teh fields because the 
+    fields are enclosed within double quotes at the beginning and at the end.
+    This tells Excel that everything within the double quotes is a single field
+    so it keeps it in one cell.
+    To remove the new lines in any entry of a field, we can do it in Excel by
+    using a formula. If the cells are in column B starting at row 2, we can
+    create a new column by modifying the cells as follows:
+    = SUBSTITUTE(B2, char(10), " ")
+    In the above command char(10) represents a line field and the 
+    substitute command replaces any line feed with a space. Then we need to 
+    copy the formula to all cells of the coluumn, and replace the original
+    column with the modified column. Then we can upload the file to the 
+    server and perform the analysis.
+
+Q1) the top 10 users who replied the most to other users 
+    375 1891490382
+    299 18831926
+    274 163018653
+    274 1495480590572961792
+    254 1231514832479948802
+    249 1219232377605644289
+    174 42836999
+    159 1229752606714728454
+    158 813314931147816960
+    141 1290232189615894531
+
+    in the above output, the second column contains the user ids and the 
+    first column contains the number of times a user replied.
+
+Q2) the top 10 users who got the most replies from other users 
+     46 3453306553
+     28 29447428
+     14 1238370241169616897
+     13 1108565574
+     12 21525682
+     12 19739126
+     12 1120633726478823425
+     11 1462548977367359490
+     10 95091601
+
+     in the above output, the second column contains the user ids  who got 
+     the most replies and the first column contains the number of times 
+     they were replied to.
+
+Q3) the top 10 users who retweeted the most other tweets 
+    2067 45379403
+    1678 77726331
+    1641 870244616003403781
+    1582 1028022611324747776
+    1312 711608180535640064
+    1281 139109800
+    1234 177400353
+    1216 832019161454817280
+    1159 29447428
+    1139 1060440219097423872
+
+     the second column contains the user ids who retweeted and the first 
+     column contains the number of times they retweeted.
+
+Q5) the 30 hashtags used most frequently overall for anything 
+   2990 ukraine
+   1924 covid19
+   1314 longcovid
+   1137 russia
+    897 followbackfriday
+    895 fbpe
+    878 standwithukraine
+    536 putinhitler
+    479 omicron
+    475 russian
+    448 covid
+    429 breaking
+    423 putin
+    384 auspol
+    383 ableg
+    358 mariupol
+    351 kyiv
+    342 bcpoli
+    328 covidisairborne
+    308 stopputinnow
+    302 pmqs
+    300 ????????????
+    295 partygate
+    285 genocide
+    274 putinwarcriminal
+    266 ottawa
+    263 russiasanctions
+    260 boycottrussia
+    257 cdnpoli
+    256 onpoli
+    255 covid19ab
+    253 ukrainian
+    252 votefordout
+    250 ba2
+    244 fluke_natouch
+
+     The second column is the hashtag and the first one shows the number
+     of occurrence. 
+
+Q6) the 30 hashtags that got retweeted the most 
+    2646 ukraine
+   1334 covid19
+   1151 longcovid
+   1053 russia
+    425 breaking
+    412 russian
+    368 auspol
+    355 omicron
+    329 kyiv
+    319 covid
+    314 standwithukraine
+    292 ????????????
+    289 mariupol
+    246 putin
+    243 ba2
+    239 fluke_natouch
+    220 ukrainian
+    198 pmqs
+    182 partygate
+    182 ableg
+    134 ???????
+    128 kharkiv
+    125 covidisairborne
+    124 england
+    123 cdnpoli
+    119 anonymous
+    118 insiders
+    116 ukrainerussiawar
+    115 nato
+    114 uk
+    114 china
+    114 brexit
+    107 ohmthitiwat
+    104 mitchplease
+    
+
+Q7) the 30 hashtags that got replied the most 
+    883 fbpe
+    876 followbackfriday
+    429 putinhitler
+    324 standwithukraine
+    280 covid19
+    216 stopputinnow
+    211 russiasanctions
+    207 boycottrussia
+    191 putinwarcriminal
+    178 bcpoli
+    142 ottawa
+    127 bced
+    122 covid19bc
+    121 genocide
+    107 nevervoteconservative
+    106 boycottatp
+    101 onpoli
+     99 longcovid
+     96 ukraine
+     92 votefordout
+     87 covidisairborne
+     85 apartheid
+     84 climatecrisis
+     76 putin
+     72 canada
+     62 cdnpoli
+     61 n95
+     58 ontario
+     58 maskup
+     55 omicron
+     49 j6traitorsayswhat
+     49 j6t
+     45 endisraeliapartheid
+ 
+     The second column has the hashtags and the first column is the number
+     of times that hashtag was replied to.
+
+Q8) the 30 hashtags that got quoted the most 
+    241 covid19
+    157 standwithukraine
+    140 votefordout
+    124 ableg
+    119 covid19ab
+    115 genocide
+    105 onpoli
+    100 nevervoteconservative
+     93 bcpoli
+     90 ukraine
+     86 covidisairborne
+     78 maskmandate
+     74 ontario
+     68 covid19bc
+     65 maskup
+     64 putin
+     64 bds
+     60 putinhitler
+     59 cdnpoli
+     57 ottawa
+     57 longcovid
+     56 canada
+     54 bced
+     53 covidisnotover
+     53 covid
+     51 omicron
+     49 vote
+     47 putinwarcriminal
+     46 votethemallout2022
+     46 freepalestine
+     45 abed
+     44 voteliberal
+     44 stopputinnow
+     43 boycottrussia
+
+      Second column is the hashtag and the first column is the number 
+      of times that hashtag was quoted.
+
+Script a2.txt screen capture follows.
+
+##############################################################################
+
+Script started on 2022-09-30 01:35:26-04:00
+]0;ananya@sjsu:~[ananya@sjsu ~]$ cd a2[K[KA2
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_oriiginal_nolf2.tsv > downloaded_tweets_extend_original_nolf2_nobot.tsv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ awk -F"\t" '($2 != $6) {print $0}' downloaded_tweets_extend_nollf2.tsv > downloaded_tweets_extend_nolf2_nobot.tsv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut –f 2 downloaded_tweets_extend_original_nolf2_nobot.tsv | soort | uniq –c | sort -nr > top_users.txt
+uniq: –c: No such file or directory
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head top_users.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ [K[ananya@sjsu A2]$ cut -f 2 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq -c | sort -nr > top_users.txt [K[A[ananya@sjsu A2]$ cut -f 2 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq -c | sort -nr > top_users.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head top_users.txt
+    375 1891490382
+    299 18831926
+    274 163018653
+    274 1495480590572961792
+    254 1231514832479948802
+    249 1219232377605644289
+    174 42836999
+    159 1229752606714728454
+    158 813314931147816960
+    141 1290232189615894531
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 6 downloaded_tweets_extend_original_nolf2_nobot.tsv | sort | uniq -c | sort -nr > top_users_2.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head top_users_2.txt 
+  38739 
+     46 3453306553
+     28 29447428
+     14 1238370241169616897
+     13 1108565574
+     12 21525682
+     12 19739126
+     12 1120633726478823425
+     11 1462548977367359490
+     10 95091601
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ grep  -P ‘type=retweet’ downloaded_tweets_extend_nolf2_nobot.tsv > q3.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut –f  2 q3.txt | sort | uniq –c | sort –nr > top_user_retweets.txt
+uniq: –c: No such file or directory
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+sort: cannot read: –nr: No such file or directory
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut 0[K-f 2 q3.txt | sort | uniq -c | sort -nr > top_user_retweets.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head us[K[Ktop_user_retweets.txt 
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ grep retweet downloaded_tweets_extend_nolf2_nobot.tsv > q3.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head q3.txt
+1520503332246376448	308045021	2022-04-30 20:40:18+00:00	"journalism,NPR"	[<ReferencedTweet id=1513654494504136709 type=retweeted]			RT @HPM_ChristinaL: Really proud of our reporters. Yet another recognition of their work. Way to go! #journalism #NPR #AwardWinningJournali…
+1520503283470815232	308045021	2022-04-30 20:40:07+00:00		[<ReferencedTweet id=1513774168348704770 type=retweeted]			RT @HPM_ChristinaL: “We as a society have reached a very ugly place where empathy is a foreign concept and where we refuse to view professi…
+1519870977311715328	308045021	2022-04-29 02:47:33+00:00	obgyntwitter	[<ReferencedTweet id=1519864927997075458 type=retweeted]			RT @falnyx: I sadly cannot apply to this but if you are an obgyn applicant that went unmatched and do not require visa #obgyntwitter #obgyn…
+1519770137024471040	308045021	2022-04-28 20:06:51+00:00		[<ReferencedTweet id=1519742972186800130 type=retweeted]			"RT @YesWeCan4Us: @joncoopertweets ICYMI: Former Supreme Court Justice Kennedy’s son, close with Ivanka Trump &amp; Jared Kushner, helped Trump…"
+1519727978426552321	308045021	2022-04-28 17:19:19+00:00		[<ReferencedTweet id=1519666326419218432 type=retweeted]			RT @sportsmedTX: My group is a part of a newly approved ortho residency. 3 spots for this July. HCA Medical City UNT/TCU in the Dallas-Ft W…
+1519454523852570625	308045021	2022-04-27 23:12:43+00:00		[<ReferencedTweet id=1519450979204276227 type=retweeted]			RT @tmprowell: Invited to a destination wedding earlier in Apr. Awesome place that holds a special place in my ❤️(Vail). Lots of people I m…
+1519080463851311111	308045021	2022-04-26 22:26:20+00:00	COVID19	[<ReferencedTweet id=1519075500588687361 type=retweeted]			RT @DrEricDing: 📍Sobering—75% of kids &amp; 60% of people age 18 to 49 have now had #COVID19. But experts warn people should *NOT* RRRRRRume they…
+1518917143169019905	308045021	2022-04-26 11:37:21+00:00	LongCovid	[<ReferencedTweet id=1518733566590394368 type=retweeted]			RT @loscharlos: Great #LongCovid interview with @timkaine &amp; @washingtonpost ~ 3 key takeaways.  1. Confirms estimates are 5-30 million in U…
+1518647168835407875	308045021	2022-04-25 17:44:34+00:00	"ImmunizeUnder5s,CovidIsntOver"	[<ReferencedTweet id=1518538452240900096 type=retweeted]			RT @hartman_bill: Listening to the stories of parents wanting the choice to #ImmunizeUnder5s has been heartbreaking. #CovidIsntOver   These…
+1518078954573381632	308045021	2022-04-24 04:06:41+00:00	ThankYouDonWinslow	[<ReferencedTweet id=1517876638461038592 type=retweeted]			RT @Eleven_Films: NEW ELEVEN FILMS  #ThankYouDonWinslow  Don Winslow has just announced his retirement from publishing. His book ‘City On F…
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 2 q3.txt | sort | uniq -c | sort -nt[Kr > top_user_rettwe[K[K[Kweets.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ head top_user_retweets.txt
+   2067 45379403
+   1678 77726331
+   1641 870244616003403781
+   1582 1028022611324747776
+   1312 711608180535640064
+   1281 139109800
+   1234 177400353
+   1216 832019161454817280
+   1159 29447428
+   1139 1060440219097423872
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 4 downloaded_tweets_extend_exte[K[K[K[Knolf2_nobot.tsv | [K[K> q5_0.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ iconv -f utf-8 -t ascii [K//TRANSLU[KIT q5_0.txt > q5_a.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q5_a.txt | tr ',' '\n' > q5_b.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sed 's/\"//g' q5_b.txt > q5_c.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q5_c.txt|tr '[A-Z]' '[a-z]' > q5_d.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q5_d.txt | sed '/^$d' > q5_e.txt
+sed: -e expression #1, char 4: unterminated address regex
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q5_d.txt | sed '/^$d' > q5_e.txt[1@/
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sort q5_e.txt | uniq -c | sort -nr > q5.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q5.txt | more[K[ananya@sjsu A2]$ cat q5.txt | more
+   2990 ukraine
+   1924 covid19
+   1314 longcovid
+   1137 russia
+    897 followbackfriday
+    895 fbpe
+    878 standwithukraine
+    536 putinhitler
+    479 omicron
+    475 russian
+    448 covid
+    429 breaking
+    423 putin
+    384 auspol
+    383 ableg
+    358 mariupol
+    351 kyiv
+    342 bcpoli
+    328 covidisairborne
+    308 stopputinnow
+    302 pmqs
+    300 ????????????
+    295 partygate
+    285 genocide
+    274 putinwarcriminal
+    266 ottawa
+    263 russiasanctions
+    260 boycottrussia
+    257 cdnpoli
+    256 onpoli
+    255 covid19ab
+    253 ukrainian
+    252 votefordout
+    250 ba2
+    244 fluke_natouch
+    227 nevervoteconservative
+    210 bced
+[7m--More--[27m[K]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ rm q5_a.txt q5_b.txt q5_c.txt q5_d.txt q5_e.txt q5_0.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv | cut –f 4 > q6_0.txt
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv | cut –f 4 > q6_0.txt[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K[K > q6_0.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut –f 4 q6_0.txt > q6_1.txt
+cut: you must specify a list of bytes, characters, or fields
+Try 'cut --help' for more information.
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ grep -P 'type=retweet' downloaded_tweets_extend_nolf2_nobot.tsv  > q6_0.tsv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 4 q6_0.tsv > q6_1.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ [K[ananya@sjsu A2]$ iconv -f utf-8 -t ascii//TRANSLIT q6_1.txt > q6_a.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q6_a.txt | tr ',' '\n' > q6_b.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sed 's/\"//g' q6_b.txt > q6_c.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q6_c.txt|tr '[A-Z]' '[a-z]' > q6_d.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q6_d.txt | sed '/^$/d' > q6_e.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sort q6_e.txt | uniq -c | sort -nr > top_retweets.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat top_retweets.txt ?[K[K[ananya@sjsu A2]$ cat top_retweets.txt | more
+   2646 ukraine
+   1334 covid19
+   1151 longcovid
+   1053 russia
+    425 breaking
+    412 russian
+    368 auspol
+    355 omicron
+    329 kyiv
+    319 covid
+    314 standwithukraine
+    292 ????????????
+    289 mariupol
+    246 putin
+    243 ba2
+    239 fluke_natouch
+    220 ukrainian
+    198 pmqs
+    182 partygate
+    182 ableg
+    134 ???????
+    128 kharkiv
+    125 covidisairborne
+    124 england
+    123 cdnpoli
+    119 anonymous
+    118 insiders
+    116 ukrainerussiawar
+    115 nato
+    114 uk
+    114 china
+    114 brexit
+    107 ohmthitiwat
+    104 mitchplease
+     99 ukrainewar
+[7m--More--[27m[K]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ rm q6_a.txt q6_b.txt q6_c.txt q6_d.txt q6_e.txt q6_0.txt [K
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ [K[ananya@sjsu A2]$ grep -P 'replied_to' downloaded_tweets_extend_nolf2_nobot.tsv > q7_0.tsv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 4 q7_0.tsv > q7_1.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ iconv -f utf-8 -t ascii//TRANSLIT q7_1.txt > q7_a.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q7_a.txt | tr ',' '\n' > q7_b.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sed 's?[K/\"//g' q7_b.txt > q7_c.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q7_c.txt | tr '[[K[A-Z]' '[a-z]' > q7_d.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q7_d.txt | sed "[K;[K'\[K/^$/d' > q7_e.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sort q7_e.txt | uniq -c | sort -nr > top_replies.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat top[K[ananya@sjsu A2]$ cat top_replies.txt | more
+    883 fbpe
+    876 followbackfriday
+    429 putinhitler
+    324 standwithukraine
+    280 covid19
+    216 stopputinnow
+    211 russiasanctions
+    207 boycottrussia
+    191 putinwarcriminal
+    178 bcpoli
+    142 ottawa
+    127 bced
+    122 covid19bc
+    121 genocide
+    107 nevervoteconservative
+    106 boycottatp
+    101 onpoli
+     99 longcovid
+     96 ukraine
+     92 votefordout
+     87 covidisairborne
+     85 apartheid
+     84 climatecrisis
+     76 putin
+     72 canada
+     62 cdnpoli
+     61 n95
+     58 ontario
+     58 maskup
+     55 omicron
+     49 j6traitorsayswhat
+     49 j6t
+     45 endisraeliapartheid
+     43 maskmandate
+[7m--More--[27m[K]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ rm q7_a.txt q7_b.txt q7_c.txt q7_d.txt q7_e.txt q7_0.txt
+rm: cannot remove 'q7_0.txt': No such file or directory
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ rm q7_0.tsv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ [K[ananya@sjsu A2]$ grep -P 'type=quoted' downloaded_tweets_extend_nolf2_nobot.tsv | cu[K[K[K[K> q8.[K_0.txt[K[Ksv
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cut -f 4 q8_0.tsv > q8_1.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ iconv -f uf[Ktf-8 -t ascii//TRANSLIT q8_1.txt > q8_a.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ v[Kcat q8_a.txt | tr ',' '\n' > q8_b.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sed 's?|[K[K/\"//g' q8_b.txt > q8_c.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q8_c.txt | tr '[A_[K-Z]' '[a-z]' > q8_d.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q8_e.txt[K[K[K[K[Kd.txt | sed '\[K/^$/d' q8_e.txt
+sed: can't read q8_e.txt: No such file or directory
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ cat q8_d.txt | sed '/^$/d' q8_e.txt> q8_e.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ sort q8_e.txt | uniq -c | sort -nr > top_quoted.txt
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ [K[ananya@sjsu A2]$ cat top_quoted.txt | more[K[ananya@sjsu A2]$ cat top_quoted.txt | more
+    241 covid19
+    157 standwithukraine
+    140 votefordout
+    124 ableg
+    119 covid19ab
+    115 genocide
+    105 onpoli
+    100 nevervoteconservative
+     93 bcpoli
+     90 ukraine
+     86 covidisairborne
+     78 maskmandate
+     74 ontario
+     68 covid19bc
+     65 maskup
+     64 putin
+     64 bds
+     60 putinhitler
+     59 cdnpoli
+     57 ottawa
+     57 longcovid
+     56 canada
+     54 bced
+     53 covidisnotover
+     53 covid
+     51 omicron
+     49 vote
+     47 putinwarcriminal
+     46 votethemallout2022
+     46 freepalestine
+     45 abed
+     44 voteliberal
+     44 stopputinnow
+     43 boycottrussia
+[7m--More--[27m[K]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ history > cmds.log
+]0;ananya@sjsu:~/A2[ananya@sjsu A2]$ exit
+
+Script done on 2022-09-30 02:18:11-04:00
+
